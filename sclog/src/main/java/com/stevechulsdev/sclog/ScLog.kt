@@ -1,6 +1,7 @@
 package com.stevechulsdev.sclog
 
 import android.util.Log
+import com.stevechulsdev.sclog.BuildConfig
 
 object ScLog {
     private const val TAG_D: String = "ScLog_Debug"
@@ -14,7 +15,6 @@ object ScLog {
 
     fun e(errorMsg: String) {
         if(BuildConfig.DEBUG) Log.e(TAG_E, errorMsg)
-        Log.e(TAG_E, errorMsg)
     }
 
     fun w(warningMsg: String) {
