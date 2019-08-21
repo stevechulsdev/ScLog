@@ -1,4 +1,4 @@
-package com.stevechulsdev.moduleproject
+package com.stevechulsdev.sclog
 
 import org.junit.Test
 
