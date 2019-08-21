@@ -14,6 +14,7 @@ object ScLog {
 
     fun e(errorMsg: String) {
         if(BuildConfig.DEBUG) Log.e(TAG_E, errorMsg)
+        Log.e(TAG_E, errorMsg)
     }
 
     fun w(warningMsg: String) {
