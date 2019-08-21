@@ -8,19 +8,19 @@ object ScLog {
     private const val TAG_W: String = "ScLog_Warring"
     private const val TAG_I: String = "ScLog_Info"
 
-    fun D(debugMsg: String) {
+    fun d(debugMsg: String) {
         if(BuildConfig.DEBUG) Log.d(TAG_D, debugMsg)
     }
 
-    fun E(errorMsg: String) {
+    fun e(errorMsg: String) {
         if(BuildConfig.DEBUG) Log.e(TAG_E, errorMsg)
     }
 
-    fun W(warningMsg: String) {
+    fun w(warningMsg: String) {
         if(BuildConfig.DEBUG) Log.w(TAG_W, warningMsg)
     }
 
-    fun I(infoMsg: String) {
+    fun i(infoMsg: String) {
         if(BuildConfig.DEBUG) Log.i(TAG_I, infoMsg)
     }
 }
