@@ -1,7 +1,8 @@
 package com.stevechulsdev.sclog
 
 import android.util.Log
-import com.stevechulsdev.sclog.BuildConfig
+
+
 
 object ScLog {
     private const val TAG_D: String = "ScLog_Debug"
@@ -9,19 +10,23 @@ object ScLog {
     private const val TAG_W: String = "ScLog_Warring"
     private const val TAG_I: String = "ScLog_Info"
 
-    fun d(debugMsg: String) {
-        if(BuildConfig.DEBUG) Log.d(TAG_D, debugMsg)
+    fun d(showLog: Boolean, debugMsg: String) {
+        if(showLog) Log.d(TAG_D, debugMsg)
+        else return
     }
 
-    fun e(errorMsg: String) {
-        if(BuildConfig.DEBUG) Log.e(TAG_E, errorMsg)
+    fun e(showLog: Boolean, errorMsg: String) {
+        if(showLog) Log.e(TAG_E, errorMsg)
+        else return
     }
 
-    fun w(warningMsg: String) {
-        if(BuildConfig.DEBUG) Log.w(TAG_W, warningMsg)
+    fun w(showLog: Boolean, warningMsg: String) {
+        if(showLog) Log.w(TAG_W, warningMsg)
+        else return
     }
 
-    fun i(infoMsg: String) {
-        if(BuildConfig.DEBUG) Log.i(TAG_I, infoMsg)
+    fun i(showLog: Boolean, infoMsg: String) {
+        if(showLog) Log.i(TAG_I, infoMsg)
+        else return
     }
 }
